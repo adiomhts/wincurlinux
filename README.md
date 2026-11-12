@@ -1,6 +1,6 @@
 # Windows to Linux / GNOME Cursor Converter & Themes
 
-Скрипт для конвертации кастомных Windows-курсоров (`.cur`, `.ani`, `Install.inf`) в формат тем курсоров Linux / GNOME / X11 / Wayland, а также готовые темы.
+Скрипт для конвертации кастомных Windows-курсоров (`.cur`, `.ani`, `Install.inf`) в формат тем курсоров Linux / GNOME / X11 / Wayland.
 
 ## Особенности конвертера (`win_to_linux_cur.py`):
 - Нативный парсинг 32-битного RGBA DIB: сохраняет полный 8-битный альфа-канал без затемнения краёв и артефактов тени.
@@ -17,11 +17,6 @@ sudo apt install x11-apps imagemagick
 ./win_to_linux_cur.py wincur -o ~/.icons
 ```
 
-## Установка готовых тем вручную:
-Скопируйте папки из `themes/` в `~/.icons/`:
-```bash
-cp -r themes/light themes/dark ~/.icons/
-```
 
 Применение темы:
 ```bash
